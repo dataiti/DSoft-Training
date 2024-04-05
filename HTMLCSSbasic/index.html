@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo.png" alt="" class="logo-img" />
+          <span class="header-logo-text">Skillfy</span>
+        </a>
+        <div class="header-navbar hide-on-mobile">
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <p class="navbar-item-text">Home</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+            <li class="navbar-item">
+              <p href="#" class="navbar-item-text">Pages</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+            <li class="navbar-item">
+              <p class="navbar-item-text">Courses</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+            <li class="navbar-item">
+              <p class="navbar-item-text">Features</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+            <li class="navbar-item">
+              <p class="navbar-item-text">Blog</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+            <li class="navbar-item">
+              <p class="navbar-item-text">Shop</p>
+              <i class="fa-solid fa-chevron-down navbar-item-icon"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="header-action hide-on-mobile">
+          <button class="header-icon-btn search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="header-icon-btn cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="primary-btn">Register</button>
+        </div>
+
+        <button class="header-bar-btn" onclick="toggleMobileNavbar()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="header-navbar-mobile">
+          <div class="navbar-mobile-search">
+            <button class="navbar-mobile-search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input placeholder="Search" class="navbar-mobile-search-input" />
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <i class="fa-solid fa-house navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Home</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-regular fa-newspaper navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Pages</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-graduation-cap navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Courses</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-blog navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Features</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-blog navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Blog</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-shop navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Shop</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-cart-shopping navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Cart</p></a>
+            </li>
+            <li class="navbar-item">
+              <i class="fa-solid fa-right-to-bracket navbar-mobile-icon"></i>
+              <a href="#"><p class="navbar-item-text">Register</p></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="section hero-section">
+        <div class="hero-left">
+          <h3 class="hero-left-title">
+            Turn your ambition into a sucess story
+          </h3>
+          <p class="hero-left-content">
+            Choose from over 100.000 online video <br />
+            cources with new additon pusblihsed every mont
+          </p>
+          <div class="hero-left-search">
+            <input
+              placeholder="Search your favourite cources"
+              class="search-input"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass search-btn-icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="hero-rigth">
+          <div class="hero-content">
+            <img src="./assets/images/hero-image.jpg" alt="" class="hero-img" />
+            <button class="hero-play-btn">
+              <i class="fa-solid fa-play hero-play-icon"></i>
+            </button>
+          </div>
+          <div class="hero-border"></div>
+        </div>
+
+        <div class="list-dot hero-list-dot-left">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+
+        <div class="list-dot hero-list-dot-right">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+
+      <section class="section cources">
+        <div class="header-section">
+          <h4 class="section-title">Get choice of your cource</h4>
+          <div class="cource-header-action">
+            <div class="action-dropdow">
+              <p class="action-dropdown-text">Design</p>
+              <span class="action-dropdown-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <button class="primary-btn">View all</button>
+          </div>
+        </div>
+
+        <div class="cource-container">
+          <div class="cource-list-card">
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/google.png"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cource-card-item">
+              <div class="cource-card-header">
+                <img
+                  src="./assets/images/google.png"
+                  alt=""
+                  class="cource-card-img"
+                />
+                <div class="cource-card-param">
+                  <div class="card-param-item rating">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="card-param-text">4.5 (120)</span>
+                  </div>
+
+                  <div class="card-param-item eye-view">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="card-param-text">28,500</span>
+                  </div>
+
+                  <div class="card-param-item video-count">
+                    <span class="card-param-icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                    <span class="card-param-text">36 lesion</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cource-card-content">
+                <div class="cource-card-title">
+                  Everything You Need to Know About Business
+                </div>
+
+                <div class="cource-card-footer">
+                  <div class="cource-card-info">
+                    <img
+                      src="./assets/images/hero-image.jpg"
+                      alt=""
+                      class="info-avatar-img"
+                    />
+                    <span class="card-info-name">Nicole Brown</span>
+                  </div>
+
+                  <div class="cource-card-price">
+                    <span class="old-price"> $99.99 </span>
+                    <span class="current-price">$49.56</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cource-footer">
+          <button
+            class="arow-btn prev-btn cource-prev-btn"
+            onclick="prevSlide()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="cource-footer-progress start"></div>
+          <div class="cource-footer-progress center"></div>
+          <div class="cource-footer-progress end"></div>
+          <button
+            class="arow-btn next-btn cource-next-btn"
+            onclick="nextSlide()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="list-dot cource-list-dot">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+
+      <section class="section category-section">
+        <div class="header-section">
+          <h4 class="section-title">
+            Choice facvourite cource from top category
+          </h4>
+          <button class="primary-btn">See all Categories</button>
+        </div>
+
+        <div class="category-card-list">
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-swatchbook"></i>
+            </div>
+            <h4 class="category-card-name">Design</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h4 class="category-card-name">Development</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <h4 class="category-card-name">IT & Software</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <h4 class="category-card-name">Business</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <h4 class="category-card-name">Marketing</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <h4 class="category-card-name">Photography</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4 class="category-card-name">Health & Care</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+
+          <div class="category-card-item">
+            <div class="category-card-icon">
+              <i class="fa-solid fa-house-signal"></i>
+            </div>
+            <h4 class="category-card-name">Technology</h4>
+            <p class="category-card-des">
+              Learn Adobe Illustrator CC graphic design, logo design, and more
+              with this in-depth, practical, easy-
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section coaching-section">
+        <div class="coaching-container">
+          <h4 class="coaching-title">
+            Online Coaching Lessons For Remote Learning
+          </h4>
+          <p class="coaching-des">
+            100% Online learning from the would's best universities and
+            companies
+          </p>
+          <button class="primary-btn">Join Today</button>
+        </div>
+
+        <!-- <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        />
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        />
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        />
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        />
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        />
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt=""
+          class="coaching-avatar-img"
+        /> -->
+
+        <div class="list-dot coaching-list-dot-left">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+
+        <div class="list-dot coaching-list-dot-right">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+
+      <section class="section introduction-section">
+        <div class="introduction-left">
+          <h4 class="section-title introduction-title">
+            Know about learning learning platform
+          </h4>
+
+          <p class="introduction-des">
+            With our growing catalog of over 30 Nanodegree programs from
+            beginner to advanced, you're sure to find one that fits your career
+            goals
+          </p>
+
+          <ul class="introduction-feature-list">
+            <li class="introduction-feature-item">
+              <i
+                class="fa-regular fa-square-check introduction-feature-icon"
+              ></i>
+              <p class="introduction-feature-text">
+                Free E-book, Video & Consolation
+              </p>
+            </li>
+            <li class="introduction-feature-item">
+              <i
+                class="fa-regular fa-square-check introduction-feature-icon"
+              ></i>
+              <p class="introduction-feature-text">
+                Free E-book, Video & Consolation
+              </p>
+            </li>
+            <li class="introduction-feature-item">
+              <i
+                class="fa-regular fa-square-check introduction-feature-icon"
+              ></i>
+              <p class="introduction-feature-text">
+                Free E-book, Video & Consolation
+              </p>
+            </li>
+          </ul>
+          <div class="introduction-action">
+            <button class="primary-btn">Start learning now</button>
+          </div>
+        </div>
+        <div class="introduction-rigth">
+          <div class="introduction-content">
+            <img
+              src="./assets/images/hero-image.jpg"
+              alt=""
+              class="introduction-img"
+            />
+          </div>
+          <div class="introduction-border"></div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="header-section">
+          <h4 class="section-title">What our students have to say</h4>
+          <div class="testimonials-group-btn">
+            <button class="arow-btn prev-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="arow-btn next-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonials-card">
+            <div class="testimonials-card-top">
+              <div class="testimonials-card-profile">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="testimonials-card-img"
+                />
+                <div class="testimonials-card-info">
+                  <h4 class="testimonials-card-info-name">Themadbrainds</h4>
+                  <span class="testimonials-card-info-type">Student</span>
+                </div>
+              </div>
+              <div class="testimonials-card-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonials-card-des">
+              Skillfy is a life saver. I don't have the time/money for a college
+              education. My goal is to become a freelance web developer, and
+              thanks to Skillfy
+            </p>
+          </div>
+
+          <div class="testimonials-card">
+            <div class="testimonials-card-top">
+              <div class="testimonials-card-profile">
+                <img
+                  src="./assets/images/hero-image.jpg"
+                  alt=""
+                  class="testimonials-card-img"
+                />
+                <div class="testimonials-card-info">
+                  <h4 class="testimonials-card-info-name">UIUX Designer</h4>
+                  <span class="testimonials-card-info-type">Student</span>
+                </div>
+              </div>
+              <div class="testimonials-card-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonials-card-des">
+              Skillfy is a life saver. I don't have the time/money for a college
+              education. My goal is to become a freelance web developer, and
+              thanks to Skillfy
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section partner-section">
+        <div class="header-section">
+          <h4 class="section-title">Trusted by our awesome partners</h4>
+          <div class="partner-group-btn">
+            <button class="arow-btn prev-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="arow-btn next-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="partner-container">
+          <a href="#" class="partner-logo-link"
+            ><img
+              src="./assets/images/envatologo.png"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+          <a href="#" class="partner-logo-link">
+            <img
+              src="./assets/images/dribbblelogo.png"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+          <a href="#" class="partner-logo-link">
+            <img
+              src="./assets/images/behancelogo.png"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+          <a href="#" class="partner-logo-link">
+            <img
+              src="./assets/images/slacklogo.webp"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+          <a href="#" class="partner-logo-link">
+            <img
+              src="./assets/images/udemylogo.png"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+          <a href="#" class="partner-logo-link">
+            <img
+              src="./assets/images/google.png"
+              alt=""
+              class="partner-logo-img"
+          /></a>
+        </div>
+      </section>
+
+      <section class="section program-section">
+        <div class="program-container">
+          <div class="program-card">
+            <img
+              src="./assets/images/hero-image.jpg"
+              alt=""
+              class="program-card-img"
+            />
+            <div class="program-card-content">
+              <h4 class="program-card-title">Become a Teacher</h4>
+              <p class="program-card-des">
+                Teach what you love. Coursector gives you the tools to create a
+                course
+              </p>
+              <div class="program-card-action">
+                <button class="primary-btn">Apply as Teacher</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <img
+              src="./assets/images/hero-image.jpg"
+              alt=""
+              class="program-card-img"
+            />
+            <div class="program-card-content">
+              <h4 class="program-card-title">Coursector for Business</h4>
+              <p class="program-card-des">
+                Get unilimited access to 3,000+ of Cousector's top courses for
+                your team
+              </p>
+              <div class="program-card-action">
+                <button class="primary-btn">Get skillfy for business</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-dot program-list-dot">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-links">
+            <h3 class="footer-link-title">Company</h3>
+            <ul class="footer-link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-link-title">Community</h3>
+            <ul class="footer-link-list">
+              <li><a href="#">Go Premium</a></li>
+              <li><a href="#">Team Plans</a></li>
+              <li><a href="#">Refer a Friend</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Scholarships</a></li>
+              <li><a href="#">Free Classes</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-link-title">Teaching</h3>
+            <ul class="footer-link-list">
+              <li><a href="#">Becom a Teacher</a></li>
+              <li><a href="#">Teaching Academy</a></li>
+              <li><a href="#">Teacher Handbook</a></li>
+              <li><a href="#">Partnerships</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-link-title">Support</h3>
+            <ul class="footer-link-list">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">System Requirements</a></li>
+              <li><a href="#">Register Activation Key</a></li>
+              <li><a href="#">Site feedback</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-text">
+            © 2015-2020 Skillfy Education Private Limited. All rights reserved
+          </div>
+          <div class="footer-copyright-social">
+            <i class="fa-brands fa-facebook"></i
+            ><i class="fa-brands fa-twitter"></i
+            ><i class="fa-brands fa-google"></i
+            ><i class="fa-brands fa-square-instagram"></i>
+          </div>
+        </div>
+
+        <div class="list-dot footer-list-dot">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
