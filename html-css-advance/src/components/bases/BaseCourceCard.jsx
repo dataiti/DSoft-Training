@@ -5,9 +5,12 @@ import BaseAvatar from "./BaseAvatar";
 import { convertToDolar } from "helpers/helper";
 import { icons } from "constants/constant";
 
-const BaseCourceCard = ({ course = {} }) => {
+const BaseCourceCard = ({ course = {}, courseCardRef }) => {
   return (
-    <div className="cursor-pointer hover:shadow-md hover:-translate-y-2 transition-all rounded-md bg-white w-[calc(33%-10px)] flex-shrink-0">
+    <div
+      className="cursor-pointer hover:shadow-md hover:-translate-y-2 transition-all rounded-md bg-white lg:w-[calc(33%-10px)] md:w-[calc(33%-10px)] flex-shrink-0 sm:w-full"
+      ref={courseCardRef}
+    >
       <div className="flex flex-col gap-3 w-full p-3">
         <img
           src={course.courseImage}

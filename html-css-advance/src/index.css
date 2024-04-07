@@ -8,15 +8,65 @@
   box-sizing: border-box;
 }
 
-input {
-  border: none;
-  outline: none;
-}
-
-button {
-}
-
+input,
 select {
   border: none;
   outline: none;
+}
+
+.category-card-item:hover {
+  transform: translateY(-8px);
+  transition-duration: 0.25s;
+}
+
+.category-card-item:nth-child(1),
+.category-card-item:nth-child(8) {
+  background-color: #efeff7;
+}
+
+.category-card-item:nth-child(2) {
+  background-color: #f38a1f;
+  color: #fff;
+}
+
+.category-card-item:nth-child(3),
+.category-card-item:nth-child(6) {
+  background-color: #dcf7fe;
+}
+
+.category-card-item:nth-child(4),
+.category-card-item:nth-child(5) {
+  background-color: #e5fae9;
+}
+
+.category-card-item:nth-child(7) {
+  background-color: #fdf3e9;
+}
+
+.category-card-item:nth-child(1) .category-card-icon,
+.category-card-item:nth-child(8) .category-card-icon {
+  color: #5444a6;
+  background-color: #e2dcfe;
+}
+
+.category-card-item:nth-child(2) .category-card-icon {
+  color: #f68c1f;
+  background-color: #fff;
+}
+
+.category-card-item:nth-child(3) .category-card-icon,
+.category-card-item:nth-child(6) .category-card-icon {
+  color: #40bff0;
+  background-color: #bbf0fe;
+}
+
+.category-card-item:nth-child(4) .category-card-icon,
+.category-card-item:nth-child(5) .category-card-icon {
+  color: #74db80;
+  background-color: #cdf5d5;
+}
+
+.category-card-item:nth-child(7) .category-card-icon {
+  color: #ee8543;
+  background-color: #fae0d1;
 }
