@@ -1,63 +1,56 @@
+const headerBarBtn = document.querySelector(".header-bar-btn");
+const slides = document.querySelectorAll(".course-card-item");
+const progressElements = document.querySelectorAll(".course-footer-progress");
+const prevCourseBtn = document.querySelector(".course-prev-btn");
+const nextCourseBtn = document.querySelector(".course-next-btn");
+let cardItemWidth = document.querySelector(".course-list-card");
+let cardIndex = 0;
+const GAP = 20;
+const ITEM_PER_SLIDE = 3;
+
 function toggleMobileNavbar() {
-  var navbar = document.querySelector(".header-navbar-mobile");
-  navbar.classList.toggle("mobile-open");
+  const navbarMobile = document.querySelector(".header-navbar-mobile");
+  navbarMobile.classList.toggle("mobile-open");
 }
 
-let cardIndex = 0;
-const slides = document.querySelectorAll(".cource-card-item");
-const progressElements = document.querySelectorAll(".cource-footer-progress");
-
-let cardItemWidth = document.querySelector(".cource-list-card").offsetWidth;
-let gap = 20;
-
-console.log(cardIndex);
-
 function updateCardDimensions() {
-  cardItemWidth = document.querySelector(".cource-list-card").offsetWidth;
+  cardItemWidth = cardItemWidth.offsetWidth;
   showSlide(cardIndex);
 }
 
-window.addEventListener("resize", updateCardDimensions);
-
 function updateFooterProgress(index) {
   progressElements.forEach((progress, i) => {
-    if (i === index) {
-      progress.classList.add("active");
-    } else {
-      progress.classList.remove("active");
-    }
+    progress.classList.toggle("active", i === index);
   });
 }
 
 function showSlide(index) {
-  const offset = -(index * (cardItemWidth + gap));
-  document.querySelector(
-    ".cource-list-card"
-  ).style.transform = `translateX(${offset}px)`;
+  const offset = -(index * (cardItemWidth.offsetWidth + GAP));
+  cardItemWidth.style.transform = `translateX(${offset}px)`;
 
   updateFooterProgress(index);
 }
 
-function prevSlide() {
-  console.log(cardIndex);
-
-  if (cardIndex <= 0) {
-    return;
+function handlePrevCourseClick() {
+  if (cardIndex > 0) {
+    cardIndex--;
+    showSlide(cardIndex);
   }
-  cardIndex--;
-  showSlide(cardIndex);
 }
 
-function nextSlide() {
-  console.log(cardIndex);
-
-  const itemsPerSlide = 3;
-  const maxIndex = Math.ceil(slides.length / itemsPerSlide) - 1;
-  if (cardIndex >= maxIndex) {
-    return;
+function handleNextCourseClick() {
+  const maxIndex = Math.ceil(slides.length / ITEM_PER_SLIDE) - 1;
+  if (cardIndex < maxIndex) {
+    cardIndex++;
+    showSlide(cardIndex);
   }
-  cardIndex++;
-  showSlide(cardIndex);
 }
 
+// Event listeners
+window.addEventListener("resize", updateCardDimensions);
+headerBarBtn.addEventListener("click", toggleMobileNavbar);
+prevCourseBtn.addEventListener("click", handlePrevCourseClick);
+nextCourseBtn.addEventListener("click", handleNextCourseClick);
+
+// Initial setup
 showSlide(cardIndex);

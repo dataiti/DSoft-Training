@@ -46,10 +46,6 @@ body {
   width: 100%;
 }
 
-.section {
-  padding: 60px var(--padding-left-right);
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -149,6 +145,7 @@ body {
   gap: 70px;
   background-color: var(--pink-backgroud-color);
   position: relative;
+  padding: 60px 300px;
 }
 
 .hero-left {
@@ -160,19 +157,19 @@ body {
   z-index: 1;
 }
 
-.hero-left-title {
+.hero-title {
   font-size: 48px;
   font-weight: 700;
   padding-right: 50px;
   color: var(--black-color);
 }
 
-.hero-left-content {
+.hero-description {
   font-size: 20px;
   color: var(--gray-color);
 }
 
-.hero-left-search {
+.hero-search {
   display: flex;
   align-items: center;
   margin-right: 50px;
@@ -202,7 +199,7 @@ body {
   font-size: 23px;
 }
 
-.hero-rigth {
+.hero-right {
   position: relative;
 }
 
@@ -255,21 +252,21 @@ body {
   border-radius: 30px;
 }
 
-.list-dot {
+.dots {
   position: absolute;
   display: grid;
   gap: 30px;
   font-size: 8px;
 }
 
-.list-dot.hero-list-dot-left {
+.dots.hero-dots-left {
   grid-template-columns: repeat(3, 1fr);
   left: 0;
   bottom: 0;
   color: var(--second-color);
 }
 
-.list-dot.hero-list-dot-right {
+.dots.hero-dots-right {
   grid-template-columns: repeat(3, 1fr);
   right: 0;
   top: 50px;
@@ -278,12 +275,13 @@ body {
 
 /* Cource Section CSS */
 
-.cources {
+.course-section {
   background-color: var(--violet-background-color);
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
+  padding: 60px 300px;
 }
 
 .header-section {
@@ -293,7 +291,7 @@ body {
   height: 60px;
 }
 
-.cource-header {
+.course-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -306,7 +304,7 @@ body {
   color: var(--black-color);
 }
 
-.cource-header-action {
+.course-header-action {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -329,19 +327,20 @@ body {
   color: var(--gray-color);
 }
 
-.cource-container {
+.course-container {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  padding: 20px 0;
 }
 
-.cource-list-card {
+.course-list-card {
   display: flex;
   gap: 20px;
   transition: all 0.25s;
 }
 
-.cource-card-item {
+.course-card-item {
   width: calc(33% - 10px);
   flex-shrink: 0;
   background-color: var(--white-color);
@@ -350,26 +349,26 @@ body {
   z-index: 1;
 }
 
-.cource-card-item:hover {
+.course-card-item:hover {
   transform: translateY(-8px);
   transition-duration: 0.25s;
 }
 
-.cource-card-header {
+.course-card-header {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 12px;
 }
 
-.cource-card-img {
+.course-card-img {
   width: 100%;
   height: 210px;
   border-radius: 4px;
   object-fit: cover;
 }
 
-.cource-card-param {
+.course-card-params {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -399,14 +398,14 @@ body {
   color: chartreuse;
 }
 
-.cource-card-content {
+.course-card-content {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 12px;
 }
 
-.cource-card-title {
+.course-card-title {
   font-size: 20px;
   font-weight: 500;
   color: var(--black-color);
@@ -418,14 +417,14 @@ body {
   height: 50px;
 }
 
-.cource-card-footer {
+.course-card-footer {
   padding: 12px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.cource-card-info {
+.course-card-info {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -444,7 +443,7 @@ body {
   color: var(--gray-color);
 }
 
-.cource-card-price {
+.course-card-price {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -461,7 +460,7 @@ body {
   font-weight: 700;
 }
 
-.cource-footer {
+.course-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -474,7 +473,12 @@ body {
   border-radius: 8px;
 }
 
-.cource-footer > .arow-btn {
+.arow-btn:hover,
+.arow-btn:active {
+  background-color: var(--gray-color);
+}
+
+.course-footer > .arow-btn {
   background: var(--white-color);
 }
 
@@ -482,7 +486,7 @@ body {
   color: var(--gray-color);
 }
 
-.cource-footer-progress-start {
+.course-footer-progress-start {
   position: absolute;
   left: 60px;
   background-color: var(--primary-color);
@@ -490,29 +494,31 @@ body {
   width: 200px;
 }
 
-.cource-footer-progress {
+.course-footer-progress {
   position: absolute;
   z-index: 1;
   height: 4px;
+  border-radius: 99px;
+  transition: width 0.25s;
 }
 
-.cource-footer-progress.start {
+.course-footer-progress.start {
   left: 60px;
   width: 232px;
 }
 
-.cource-footer-progress.center {
+.course-footer-progress.center {
   left: 50%;
   transform: translateX(-50%);
   width: 292px;
 }
 
-.cource-footer-progress.end {
+.course-footer-progress.end {
   width: 232px;
   right: 60px;
 }
 
-.cource-footer-progress.active {
+.course-footer-progress.active {
   background-color: var(--primary-color);
 }
 
@@ -520,7 +526,7 @@ body {
   color: var(--second-color);
 }
 
-.list-dot.cource-list-dot {
+.dots.course-dots {
   grid-template-columns: repeat(6, 1fr);
   bottom: 80px;
   right: 39.5%;
@@ -529,11 +535,12 @@ body {
 
 /* Category css */
 
-.category {
+.category-section {
   background-color: var(--white-color);
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 60px 300px;
 }
 
 .category-card-list {
@@ -591,7 +598,7 @@ body {
   border-radius: 4px;
 }
 
-.category-card-item:nth-child(1),
+.category-card-item:nth-child(1) .category-card-icon,
 .category-card-item:nth-child(8) .category-card-icon {
   color: #5444a6;
   background-color: #e2dcfe;
@@ -636,6 +643,7 @@ body {
   padding: 150px 0;
   background-color: var(--pink-backgroud-color);
   position: relative;
+  padding: 120px 300px;
 }
 
 .coaching-container {
@@ -657,14 +665,14 @@ body {
   font-weight: 500;
 }
 
-.list-dot.coaching-list-dot-left {
+.dots.coaching-dots-left {
   left: 0;
   bottom: 4px;
   grid-template-columns: repeat(3, 1fr);
   color: #f9aba7;
 }
 
-.list-dot.coaching-list-dot-right {
+.dots.coaching-dots-right {
   right: 0;
   top: 50%;
   transform: translateY(-59%);
@@ -679,6 +687,7 @@ body {
   align-items: center;
   padding-bottom: 100px;
   gap: 50px;
+  padding: 50px 300px 90px 300px;
 }
 
 .introduction-left {
@@ -699,7 +708,7 @@ body {
   color: var(--gray-color);
 }
 
-.introduction-feature-list {
+.introduction-list-feature {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -750,98 +759,100 @@ body {
   border-top-right-radius: 120px;
 }
 
-/* testimonials section css */
+/* feedback section css */
 
-.testimonials-section {
+.feedback-section {
   background-color: var(--violet-background-color);
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 60px 300px;
 }
 
-.testimonials-group-btn {
+.feedback-group-btn {
   display: flex;
   gap: 20px;
 }
 
-.testimonials-group-btn > .arow-btn {
+.feedback-group-btn > .arow-btn {
   background-color: var(--white-color);
 }
 
-.testimonials-container {
+.feedback-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.testimonials-card {
+.feedback-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: var(--white-color);
   padding: 26px 16px;
   border-top-right-radius: 20px;
+  border-left: 4px solid transparent;
 }
 
-.testimonials-card:hover {
+.feedback-card:hover {
+  border-color: var(--second-color);
   cursor: pointer;
   background-color: #edebf3;
   transition-duration: 0.25s;
 }
 
-.testimonials-card:last-child {
-  border-left: 4px solid var(--second-color);
-}
-
-.testimonials-card-top {
+.feedback-card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.testimonials-card-profile {
+.feedback-card-profile {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.testimonials-card-img {
+.feedback-card-img {
   width: 50px;
   height: 50px;
   border-radius: 100%;
   object-fit: cover;
 }
 
-.testimonials-card-info {
+.feedback-card-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.testimonials-card-info-name {
+.feedback-card-info-name {
   color: var(--gray-color);
   font-size: 18px;
   font-weight: 600;
 }
 
-.testimonials-card-info-type {
+.feedback-card-info-type {
   font-size: 14px;
   color: #9898a0;
 }
 
-.testimonials-card-rating {
+.feedback-card-rating {
   display: flex;
   align-items: center;
   gap: 6px;
   color: #f6922b;
 }
 
-.testimonials-card-des {
+.feedback-card-des {
   color: var(--gray-color);
   font-weight: 500;
 }
 
 /* Partner section css */
+.partner-section {
+  padding: 60px 300px;
+}
 
 .partner-group-btn {
   display: flex;
@@ -869,6 +880,7 @@ body {
 .program-section {
   background-color: var(--pink-backgroud-color);
   position: relative;
+  padding: 60px 300px;
 }
 
 .program-container {
@@ -915,7 +927,7 @@ body {
   color: var(--gray-color);
 }
 
-.program-list-dot {
+.program-dots {
   color: #f9aba8;
   grid-template-columns: repeat(3, 1fr);
   left: 0;
@@ -976,557 +988,9 @@ body {
   color: var(--gray-color);
 }
 
-.footer-list-dot {
+.footer-dots {
   top: 4px;
   left: 0;
   grid-template-columns: repeat(3, 1fr);
   color: #494953;
-}
-
-@media only screen and (max-width: 46.1875em) {
-  /* header css  */
-
-  .hide-on-mobile {
-    display: none;
-  }
-
-  .header-navbar-mobile {
-    display: none;
-  }
-
-  .header-navbar-mobile.mobile-open {
-    display: block;
-  }
-
-  .header-bar-btn {
-    display: block;
-    color: var(--primary-color);
-  }
-
-  .header-bar-btn:hover {
-    color: var(--second-color);
-    transition-duration: 0.25s;
-  }
-
-  .header-navbar-mobile {
-    position: absolute;
-    inset: unset;
-    background-color: var(--violet-background-color);
-    z-index: 3;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    padding: 20px;
-  }
-
-  .navbar-mobile-icon {
-    font-size: 20px;
-    color: var(--primary-color);
-  }
-
-  .navbar-mobile-search {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .navbar-mobile-search-btn {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    border-radius: 4px 0 0 4px;
-    color: var(--white-color);
-  }
-
-  .navbar-mobile-search-input {
-    padding: 10px 20px;
-    border-radius: 0 4px 4px 0;
-    width: 100%;
-    margin-right: 40px;
-  }
-
-  .list-dot {
-    display: none;
-  }
-
-  .header {
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
-  }
-
-  .header-bar-btn {
-    font-size: 20px;
-    z-index: 4;
-  }
-
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .navbar-item {
-    gap: 20px;
-  }
-
-  .navbar-item-text {
-    font-size: 18px;
-  }
-
-  /* Hero section responsive css  */
-
-  .hero-section {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 20px;
-    width: 100%;
-    padding: 40px 20px;
-  }
-
-  .hero-left {
-    gap: 10px;
-  }
-
-  .hero-left-title {
-    font-size: 24px;
-    padding: 0;
-  }
-
-  .hero-left-content {
-    font-size: 18px;
-  }
-
-  .hero-left-search {
-    margin-right: 0;
-  }
-
-  .hero-rigth {
-    margin-left: 30px;
-    padding: 0;
-  }
-
-  .hero-content {
-    height: 420px;
-    width: 320px;
-    position: absolute;
-    left: -30px;
-    top: -30px;
-  }
-
-  .hero-play-btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .hero-play-icon {
-    font-size: 20px;
-  }
-
-  .hero-border {
-    height: 420px;
-    width: 320px;
-  }
-
-  /* category section responsive css  */
-
-  .category-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-    height: 100%;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .category-card-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .category-card-item {
-    padding: 20px 10px;
-    gap: 10px;
-  }
-
-  /* Cources section responsive css  */
-
-  .cources {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cource-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .cource-card-header {
-    padding: 8px;
-  }
-
-  .cource-card-img {
-    height: 150px;
-  }
-
-  .cource-card-param .video-count {
-    display: none;
-  }
-
-  .card-param-icon {
-    font-size: 12px;
-  }
-
-  .cource-card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 8x;
-  }
-  .cource-card-title {
-    font-size: 18px;
-  }
-
-  .cource-card-footer {
-    padding: 0;
-    justify-content: end;
-  }
-  .cource-card-info {
-    display: none;
-  }
-
-  .cource-footer-progress {
-    width: 150px;
-  }
-
-  /* Coaching section responsive css  */
-
-  .coaching-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Introduction section responsive css  */
-
-  .introduction-section {
-    padding: 40px 20px;
-    flex-direction: column-reverse;
-  }
-
-  .introduction-left {
-    gap: 20px;
-  }
-
-  .introduction-feature-list,
-  .introduction-feature-item {
-    gap: 10px;
-  }
-
-  .introduction-action {
-    display: flex;
-    justify-content: center;
-  }
-
-  .introduction-rigth {
-    margin-left: 30px;
-    padding: 0;
-  }
-
-  .introduction-content {
-    height: 420px;
-    width: 320px;
-    position: absolute;
-    left: -30px;
-    bottom: -30px;
-  }
-
-  .introduction-border {
-    height: 420px;
-    width: 320px;
-  }
-
-  /* Testimonials section responsive css  */
-
-  .testimonials-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Partner section responsive css  */
-
-  .partner-section {
-    padding: 40px 20px;
-  }
-
-  .partner-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 0;
-  }
-
-  /* Program section responsive css  */
-
-  .program-section {
-    padding: 40px 20px;
-  }
-
-  .program-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .program-card {
-    padding: 20px 10px;
-    gap: 16px;
-  }
-
-  .program-card-content {
-    gap: 16px;
-  }
-
-  /* Footer responsive css */
-
-  .footer {
-    padding: 0 20px;
-  }
-
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .footer-copyright {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-/* Tablet: width >= 768px and width < 1024px */
-
-@media only screen and ((min-width: 46.25em) and (max-width: 85.375em)) {
-  /* header css  */
-
-  .list-dot {
-    display: none;
-  }
-
-  .coaching-avatar-img {
-    display: none;
-  }
-
-  .header {
-    padding: 0 20px;
-  }
-
-  .navbar-menu {
-    gap: 20px;
-  }
-
-  .hero-section {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    padding: 40px 20px;
-  }
-
-  .hero-rigth {
-    margin-left: 30px;
-    padding: 0;
-  }
-
-  .hero-content {
-    height: 420px;
-    width: 320px;
-    position: absolute;
-    left: -30px;
-    top: -30px;
-  }
-
-  .hero-play-btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .hero-play-icon {
-    font-size: 20px;
-  }
-
-  .hero-border {
-    height: 420px;
-    width: 320px;
-  }
-
-  /* category section responsive css  */
-
-  .category-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-
-  .category-card-list {
-    gap: 10px;
-  }
-
-  /* Cources section responsive css  */
-
-  .cources {
-    padding: 40px 20px;
-    gap: 20px;
-  }
-
-  .cource-container {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-  }
-
-  .cource-list-card {
-    display: flex;
-    gap: 20px;
-    transition: all 0.25s;
-  }
-
-  .cource-card-item {
-    width: calc(33% - 10px);
-    flex-shrink: 0;
-    background-color: var(--white-color);
-    border-radius: 4px;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  .cource-card-header {
-    padding: 8px;
-  }
-
-  .cource-card-img {
-    height: 200px;
-  }
-
-  .cource-card-content {
-    gap: 10px;
-    padding: 8x;
-  }
-
-  .cource-card-title {
-    font-size: 18px;
-  }
-
-  .cource-footer-progress.start {
-    left: 60px;
-    width: 176px;
-  }
-
-  .cource-footer-progress.center {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 230px;
-  }
-
-  .cource-footer-progress.end {
-    width: 176px;
-    right: 60px;
-  }
-
-  /* Coaching section responsive css  */
-
-  .coaching-section {
-    padding: 40px 20px;
-    gap: 20px;
-  }
-
-  /* Introduction section responsive css  */
-
-  .introduction-section {
-    padding: 40px 20px 70px 20px;
-  }
-
-  .introduction-rigth {
-    margin-left: 30px;
-  }
-
-  .introduction-content {
-    height: 420px;
-    width: 320px;
-  }
-
-  .introduction-border {
-    height: 420px;
-    width: 320px;
-  }
-
-  /* Testimonials section responsive css  */
-
-  .testimonials-section {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Partner section responsive css  */
-
-  .partner-section {
-    padding: 40px 20px;
-  }
-
-  /* Program section responsive css  */
-
-  .program-section {
-    padding: 40px 20px;
-  }
-
-  .program-card {
-    padding: 20px 10px;
-    gap: 16px;
-  }
-
-  .program-card-content {
-    gap: 16px;
-  }
-
-  /* Footer responsive css */
-
-  .footer {
-    padding: 0 20px;
-  }
-
-  .footer-container {
-    gap: 42px;
-  }
 }
