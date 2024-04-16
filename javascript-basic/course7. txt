@@ -1,118 +1,118 @@
 Thêm, xoá phần tử
 - push
-+ Ưu điểm: 	    - cú pháp ngắn gọn, dễ hiểu cho tác vụ thêm phần tử vào cuối mảng
-		        - Có thể thêm nhiều phần tử vào cuối mảng
++ Ưu điểm: 	    	- cú pháp ngắn gọn, dễ hiểu cho tác vụ thêm phần tử vào cuối mảng
+			- Có thể thêm nhiều phần tử vào cuối mảng
 		        - trả về length mới, giúp check thêm thành công chưa
-+ Nhược điểm:	- Chỉ có thể thêm tại vị trí cuối mà không thể thêm vào chỉ mục bất kỳ
++ Nhược điểm:		- Chỉ có thể thêm tại vị trí cuối mà không thể thêm vào chỉ mục bất kỳ
 		        - Làm thay đổi mảng gốc
 - unshift
-+ Ưu điểm: 	    -  cú pháp ngắn gọn cho tác vụ muốn thêm 1 hay nhiều phần tử vào đầu mảng
++ Ưu điểm: 	    	-  cú pháp ngắn gọn cho tác vụ muốn thêm 1 hay nhiều phần tử vào đầu mảng
 		        - trả về length mới, giúp check thêm thành công chưa
-+ Nhược điểm	- Đối với các mảng lớn thì ảnh hưởng đến hiệu suất vì sẽ dịch chuyển vị trí các phần 		tử phía sau
++ Nhược điểm		- Đối với các mảng lớn thì ảnh hưởng đến hiệu suất vì sẽ dịch chuyển vị trí các phần 		tử phía sau
 		        - Làm thay đổi mảng gốc
 - pop
-+ Ưu điểm:	    - phương thức ngắn gọn cho tác vụ xoá phần tử cuối mảng
++ Ưu điểm:	    	- phương thức ngắn gọn cho tác vụ xoá phần tử cuối mảng
 		        - trả về phần tử đã xoá, phù hợp cho việc check thành công
-+ Nhược điểm:	- Chỉ xoá được 1 phần tử duy nhất, nếu cần xoá nhiều phải dùng splice
++ Nhược điểm:		- Chỉ xoá được 1 phần tử duy nhất, nếu cần xoá nhiều phải dùng splice
 		        - Làm thay đổi mảng gốc
 - shift
-+ Ưu điểm:	    - phương thức ngắn gọn cho tác vụ xoá phần tử đầumảng
-                - trả về phần tử đã xoá, phù hợp cho việc check thành công
-+ Nhược điểm:	- Chỉ xoá được 1 phần tử duy nhất, nếu cần xoá nhiều phải dùng splice
++ Ưu điểm:	    	- phương thức ngắn gọn cho tác vụ xoá phần tử đầumảng
+                	- trả về phần tử đã xoá, phù hợp cho việc check thành công
++ Nhược điểm:		- Chỉ xoá được 1 phần tử duy nhất, nếu cần xoá nhiều phải dùng splice
 		        - Làm thay đổi mảng gốc
 - splice		
-+ Ưu điểm:	    - Cú pháp ngắn gọn nhưng nhiều tác vụ: vừa có thể thêm, vừa xoá, vừa thay thế phần tử trong mảng theo chỉ mục
-+ Nhược điểm:	- Làm thay đổi mảng gốc
-                - Đối với mảng có kich thước lớn, khi thêm hoặc xoá sẽ làm dịch chuyển các phần tử nên hiệu suất sẽ k tốt
-                - nhiều tham số nên trường hợp thêm nhiều phần tử quá sẽ dễ nhầm
-- so sánh: 	    - Đều là các phương thức thao tác làm thay đổi trực tiếp lên mảng gốc
-                - push và unshift đều là thao các thao tác có thể thêm phần tử vào mảng, còn pop và shift là xoá phần tử trong mảng
-                - push và pop thì hoạt động ở cuối mảng,  unshift và shift hoạt động ở đầu mảng, trong khi splice hoạt động ở mọi vị trí 
-                - splice mạnh mẽ và linh hoạt hơn khi có thể thêm, xoá, hoặc thay thể
-                - push và unshift return về chiều dài mới của mảng, pop và shift trả về các phần tử đã xoá còn splice sẽ trả về mảng các phần tử đã xoá 
++ Ưu điểm:	    	- Cú pháp ngắn gọn nhưng nhiều tác vụ: vừa có thể thêm, vừa xoá, vừa thay thế phần tử trong mảng theo chỉ mục
++ Nhược điểm:		- Làm thay đổi mảng gốc
+                	- Đối với mảng có kich thước lớn, khi thêm hoặc xoá sẽ làm dịch chuyển các phần tử nên hiệu suất sẽ k tốt
+                	- nhiều tham số nên trường hợp thêm nhiều phần tử quá sẽ dễ nhầm
+- so sánh: 	    	- Đều là các phương thức thao tác làm thay đổi trực tiếp lên mảng gốc
+	                - push và unshift đều là thao các thao tác có thể thêm phần tử vào mảng, còn pop và shift là xoá phần tử trong mảng
+	                - push và pop thì hoạt động ở cuối mảng,  unshift và shift hoạt động ở đầu mảng, trong khi splice hoạt động ở mọi vị trí 
+	                - splice mạnh mẽ và linh hoạt hơn khi có thể thêm, xoá, hoặc thay thể
+	                - push và unshift return về chiều dài mới của mảng, pop và shift trả về các phần tử đã xoá còn splice sẽ trả về mảng các phần tử đã xoá 
 Sắp xếp phần tử:
 - sort
-+ Ưu điểm:	    - Hàm có sẵn giúp sắp xếp các phẩn tử trong mảng
-+ Nhược điểm:	- mặc định xếp theo giá trị string, muốn sắp xếp cho number phải cung cấp thêm compare function
++ Ưu điểm:	   	- Hàm có sẵn giúp sắp xếp các phẩn tử trong mảng
++ Nhược điểm:		- mặc định xếp theo giá trị string, muốn sắp xếp cho number phải cung cấp thêm compare function
 		        - Làm thay đổi mảng gốc
 - reverse
-+ Ưu điểm:	    - Phướng thức có sẵn giúp đảo ngược các phần tử trong mảng 
-+ Nhược điểm:	- Làm thay đổi mảng gốc
-- so sánh	    - sort sắp xếp các phần tử theo thứ tự dựa vào hàm so sánh
++ Ưu điểm:	    	- Phướng thức có sẵn giúp đảo ngược các phần tử trong mảng 
++ Nhược điểm:		- Làm thay đổi mảng gốc
+- so sánh	    	- sort sắp xếp các phần tử theo thứ tự dựa vào hàm so sánh
 		        - reverse đạo ngược thứ tự phần tử 
 - slice
-+ Ưu điểm:	    - Phương thức ngắn gọn cho việc sao chép hoặc cắt mảng
-                - Không làm thay đổi mảng ban đầu
-+ Nhược điểm:	- 
++ Ưu điểm:	    	- Phương thức ngắn gọn cho việc sao chép hoặc cắt mảng
+                	- Không làm thay đổi mảng ban đầu
++ Nhược điểm:		- 
 
 Duyệt, Lọc và biến đổi phần tử
 - Filter
-+ Ưu điểm: 	    - Cú pháp ngắn gọn, dễ hiểu cho tác vụ muốn lọc các ptử trong mảng theo điều kiện
++ Ưu điểm: 	    	- Cú pháp ngắn gọn, dễ hiểu cho tác vụ muốn lọc các ptử trong mảng theo điều kiện
 		        - Return vễ mảng mới k ảnh hướng đến mảng gốc
-+ Nhược điểm:	- Đối với các mảng lớn thì tốn bộ nhớ vì phải tạo thêm 1 mảng mới
-                - Filter lặp qua tất cả các phần tử trong mảng nên không thể dùng các lệnh điều khiển như break hay continue
-                - Phải return về 1 giá trị, nếu k sẽ bị gây ra lỗi
++ Nhược điểm:		- Đối với các mảng lớn thì tốn bộ nhớ vì phải tạo thêm 1 mảng mới
+	                - Filter lặp qua tất cả các phần tử trong mảng nên không thể dùng các lệnh điều khiển như break hay continue
+	                - Phải return về 1 giá trị, nếu k sẽ bị gây ra lỗi
 - map:
-+ Ưu điểm:	    - Cú pháp ngắn gọn cho thao tác muốn biển đối dữ liệu phần tử trong mảng mới mà k làm thay đổi mảng gốc, giúp dễ kết hợp thêm các phương thức khác sau khi trả về xong như filter, find, includes…
-+ Nhược điểm:	- không thể dùng các lệnh điều khiển như break hay continue
-                - Đối với các mảng lớn thì tốn bộ nhớ vì phải tạo thêm 1 mảng mới
-                - Không mạnh đối với các thao tác biến đổi dữ liệu phức tạp
-                - Phải return về 1 giá trị, nếu k sẽ bị gây ra lỗi
++ Ưu điểm:	    	- Cú pháp ngắn gọn cho thao tác muốn biển đối dữ liệu phần tử trong mảng mới mà k làm thay đổi mảng gốc, giúp dễ kết hợp thêm các phương thức khác sau khi trả về xong như filter, find, includes…
++ Nhược điểm:		- không thể dùng các lệnh điều khiển như break hay continue
+	                - Đối với các mảng lớn thì tốn bộ nhớ vì phải tạo thêm 1 mảng mới
+	                - Không mạnh đối với các thao tác biến đổi dữ liệu phức tạp
+	                - Phải return về 1 giá trị, nếu k sẽ bị gây ra lỗi
 - forEach:
-+ Ưu điểm:	    - cú pháp ngắn gọn cho việc muốn duyệt mảng
++ Ưu điểm:	    	- cú pháp ngắn gọn cho việc muốn duyệt mảng
 		        - Đối với các mảng có kích thước lớn, tốc độ và mức chiếm bộ nhớ tốt hơn vì k trả về 
-+ Nhược điểm:	- Trong một số trường hợp, không trả về giá trị nên khó tái sử dụng
++ Nhược điểm:		- Trong một số trường hợp, không trả về giá trị nên khó tái sử dụng
 		        - Không thể dùng các câu lệnh điều khiển như break hay continue
 - reduce
-+ Ưu điểm:	    - Cú pháp ngắn gọn cho tác vụ muốn tính toán và biến đổi trên mảng
-                - Có thể xác định được kiểu dữ liệu trả về dựa trên init value và biến tích luỹ trong callback
-                - Không làm thay đổi mảng gốc
-+ Nhược điểm:	- có thể gây lỗi hoặc tính toán sai nếu không cung cấp giá trị initValue phù hợp
-                - nếu việc tính toán đơn giản thì dùng reduce sẽ giúp code trở nên phức tạp
-                - Không thể dùng các câu lệnh điều khiển như break hay continue
-- so sánh: 	    - Đều không làm thay đổi mảng gốc
-                - filter lọc các phần tử và trả về mảng mới dựa trên điều kiện lọc trong callback
-                - map biến đổi từng phần tử và trả về mảng mới cùng đồ dài với mảng gốc
-                - forEach dùng để duyệt mảng và không trả về giá trị
-                - reduce dùng để tính toán một giá trị dựa trên các phần tử của mảng và thực hiện một phép tính tích luỹ để trả về một giá trị duy nhất
++ Ưu điểm:	    	- Cú pháp ngắn gọn cho tác vụ muốn tính toán và biến đổi trên mảng
+	                - Có thể xác định được kiểu dữ liệu trả về dựa trên init value và biến tích luỹ trong callback
+	                - Không làm thay đổi mảng gốc
++ Nhược điểm:		- có thể gây lỗi hoặc tính toán sai nếu không cung cấp giá trị initValue phù hợp
+	                - nếu việc tính toán đơn giản thì dùng reduce sẽ giúp code trở nên phức tạp
+	                - Không thể dùng các câu lệnh điều khiển như break hay continue
+- so sánh: 	    	- Đều không làm thay đổi mảng gốc
+	                - filter lọc các phần tử và trả về mảng mới dựa trên điều kiện lọc trong callback
+	                - map biến đổi từng phần tử và trả về mảng mới cùng đồ dài với mảng gốc
+	                - forEach dùng để duyệt mảng và không trả về giá trị
+	                - reduce dùng để tính toán một giá trị dựa trên các phần tử của mảng và thực hiện một phép tính tích luỹ để trả về một giá trị duy nhất
 Tìm kiếm phần tử
 - find
-+ Ưu điểm:	    - Cú pháp ngắn gọn cho việc muốn tìm kiếm 1 phần tử đầu tiên trong mảng
++ Ưu điểm:	    	- Cú pháp ngắn gọn cho việc muốn tìm kiếm 1 phần tử đầu tiên trong mảng
 		        - Có thể tìm kiếm với nhiều điều kiện trong callback
-+ Nhược điểm:	- Chỉ trả về 1 phần tử đầu tiên thoả điều kiện
++ Nhược điểm:		- Chỉ trả về 1 phần tử đầu tiên thoả điều kiện
 - findIndex
-+ Ưu điểm:	    - Cú pháp ngắn gọn dễ hiểu cho việc tìm kiếm vị trí của một phần tử đầu tiền trong mảng
-                - Có thể tìm kiếm với nhiều điều kiện trong callback
-+ Nhược điểm:	-  Chỉ trả về vị trí của 1 phần tử đầu tiên thoả điều kiện
++ Ưu điểm:	    	- Cú pháp ngắn gọn dễ hiểu cho việc tìm kiếm vị trí của một phần tử đầu tiền trong mảng
+                	- Có thể tìm kiếm với nhiều điều kiện trong callback
++ Nhược điểm:		-  Chỉ trả về vị trí của 1 phần tử đầu tiên thoả điều kiện
 - indexOf
-+ Ưu điểm:	    - Nếu tìm kiếm index của 1 giá trị cụ thể thì là 1 giải pháp nhanh và ngắn gọn cho việc tìm vị trí của một giá trị đơn giản trong mảng
-+ Nhược điểm:	- Chỉ tìm kiếm 1 giá trị cụ thể dựa trên so sánh ===, không phù hợp đối với điều kiện phức tạp
-- so sánh:  	- Đều là k làm thay đổi mảng gốc
-                - find và finIndex nhận vào 1 callback, còn indexOf nhận vào một giá trị
-                - find trả về p tử đầu tiên tìm thấy trong mảng, nếu không có sẽ return về undefined
-                - findIndex và indexOf trả về index của phần tử nếu tìm thấy, nếu k có sẽ trả về -1
-                - findInex tìm kiếm theo điều kiện, còn indexOf tìm kiếm theo 1 giá trị cụ thể
++ Ưu điểm:	    	- Nếu tìm kiếm index của 1 giá trị cụ thể thì là 1 giải pháp nhanh và ngắn gọn cho việc tìm vị trí của một giá trị đơn giản trong mảng
++ Nhược điểm:		- Chỉ tìm kiếm 1 giá trị cụ thể dựa trên so sánh ===, không phù hợp đối với điều kiện phức tạp
+- so sánh:  		- Đều là k làm thay đổi mảng gốc
+	                - find và finIndex nhận vào 1 callback, còn indexOf nhận vào một giá trị
+	                - find trả về p tử đầu tiên tìm thấy trong mảng, nếu không có sẽ return về undefined
+	                - findIndex và indexOf trả về index của phần tử nếu tìm thấy, nếu k có sẽ trả về -1
+	                - findInex tìm kiếm theo điều kiện, còn indexOf tìm kiếm theo 1 giá trị cụ thể
 Kiểm tra phần tử
 - some
-+ Ưu điểm: 	    - Cú pháp ngắn gọn, dễ hiểu cho tác vụ muốn kiểm tra 
++ Ưu điểm: 	    	- Cú pháp ngắn gọn, dễ hiểu cho tác vụ muốn kiểm tra 
 		        - Dễ dàng viết các câu lệnh điều kiện bằng hàm
-+ Nhược điểm:	- chỉ trả về boolean mà không trả về phần tử thoả điều kiện
++ Nhược điểm:		- chỉ trả về boolean mà không trả về phần tử thoả điều kiện
 - every
-- Ưu điểm:	    - Cú pháp ngắn gọn cho tác vụ muốn đảm bảo mọi phần tử thoả mãn điều kiện
+- Ưu điểm:	    	- Cú pháp ngắn gọn cho tác vụ muốn đảm bảo mọi phần tử thoả mãn điều kiện
 		        - Dễ dàng viết các câu lệnh điều kiện bằng hàm
-- Nhược điểm:	- chỉ trả về boolean mà không trả về phần tử thoả điều kiện
+- Nhược điểm:		- chỉ trả về boolean mà không trả về phần tử thoả điều kiện
 - includes
-+ Ưu điểm:	    - Cú pháp ngắn gọn cho việc muốn kiểm tra sự tồn tại của phần tử trong mảng
-                - Trả về true hoặc false nên không làm thay đổi mảng gốc
-+ Nhược điểm:	- Không thể kiểm tra điều kiện phức tạp vì nó so sánh dựa trên ===
++ Ưu điểm:	    	- Cú pháp ngắn gọn cho việc muốn kiểm tra sự tồn tại của phần tử trong mảng
+                	- Trả về true hoặc false nên không làm thay đổi mảng gốc
++ Nhược điểm:		- Không thể kiểm tra điều kiện phức tạp vì nó so sánh dựa trên ===
 		        - Đối với các mảng lơn, includes cần duyệt qua tất cả các mảng nên tốc độ sẽ bị ảnh hưởng
-- so sánh:	    - Đều trả về boolean
-                - includes kiểm tra sự tồn tại của phẩn tử trong mảng
-                - some kiểm tra có ít nhất 1 ptử
-                - every kiểm tra tất cả 
-                - some() dừng lại ngay khi có 1 ptử thoả mãn điều kiện và return vè true
-                - every() trả về true khi tất cả đều thoả mãn điều kiện, dừng ngay khi 1 phần tử không thoả diều kiện và return về false 
-                - some() và every() kiểm tra dựa trên điều kiện trong hàm callback truyển vào, trong khi includes() kiêm tra dựa trên giá trị cụ thể	
+- so sánh:	    	- Đều trả về boolean
+	                - includes kiểm tra sự tồn tại của phẩn tử trong mảng
+	                - some kiểm tra có ít nhất 1 ptử
+	                - every kiểm tra tất cả 
+	                - some() dừng lại ngay khi có 1 ptử thoả mãn điều kiện và return vè true
+	                - every() trả về true khi tất cả đều thoả mãn điều kiện, dừng ngay khi 1 phần tử không thoả diều kiện và return về false 
+	                - some() và every() kiểm tra dựa trên điều kiện trong hàm callback truyển vào, trong khi includes() kiêm tra dựa trên giá trị cụ thể	
 
 
 
